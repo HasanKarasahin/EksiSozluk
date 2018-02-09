@@ -1,0 +1,704 @@
+body{
+    margin: 0;
+    padding: 0;
+	font-family: 'Source Sans Pro',sans-serif;
+}
+body ul{
+   list-style-type: none;
+}
+#container{
+ 
+}
+#header{
+    width: 100%;
+    background: #ffffff;
+    height: 100px;
+    border-top: 5px solid #80C14B;
+    border-bottom: 1px solid #B0BEC5;
+    position: fixed;
+}
+#header_content{
+    width: 1200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:-15px;
+}
+#logo{
+    width: 250px;
+    height: 24px;
+    background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+    margin-top: 10px;
+    float: left;
+	margin-top:15px;
+	margin-left:20px;
+}
+
+#search{
+    width: 380px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    float: left;
+}
+
+input[name="search"]{
+    width: 350px;
+    height: 30px;
+    padding: 7px;
+    border:1px solid #80C14B;
+    outline:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+input[name="searchbuton"]{
+	float:right;
+	height:30px;
+	width:30px;
+	background-image: url(../images/aramaicon.png);
+	background-repeat: no-repeat;
+	border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	border:green;
+	background-color:#80C14B;
+}
+a.headerustlink
+{
+	float:right;
+	text-decoration:none;
+	color:black;
+	margin-left:24px;
+	margin-top:25px;
+	font-size:15px;
+}
+.profillink
+{
+	float:right;
+	text-decoration:none;
+	color:black;
+	margin-left:24px;
+	margin-top:15px;
+	font-size:15px;
+	
+}
+
+#mesajdiv
+{
+	height:25px;
+	width:80px;
+	background-color:#80C14B;
+	border-radius:7px;
+	border:white;
+	text-align:center;
+	color:white;
+	padding-top:5px;
+}
+#benicon
+{
+	background:red;
+}
+a.profillink:hover
+{
+	text-decoration:underline;
+}
+a.headerustlink:hover
+{
+	text-decoration:underline;
+}
+#menu
+{
+	width:auto;
+	height:45px;
+	color:green;
+	margin-top:5px;
+	margin-left:25px;
+	padding-top:5px;
+}
+.linkbutonlari
+{
+	background-color:#fff;
+	border:0;
+	cursor:pointer;
+	margin-right:25px;
+	text-decoration:none;
+	color:#333333;
+	font-size:15px;
+	font-weight:normal;
+	padding-bottom:10px;
+	line-height:23px;
+	font-style:normal;
+	height:25px;
+	outline:none;
+	margin-top:5px;
+}
+#cikisbuton
+{
+    background-color:#fff;
+	border:0;
+	cursor:pointer;
+	margin-right:25px;
+	text-decoration:none;
+	color:#333333;
+	font-size:15px;
+	font-weight:normal;
+	padding-bottom:10px;
+	line-height:23px;
+	font-style:normal;
+	height:25px;
+	outline:none;
+	margin-top:5px;
+}
+.linkbutonlari:hover
+{
+	color:green;
+	padding-bottom:20px;
+	border-bottom:5px solid #80C14B;
+    padding-bottom: 35px;
+}
+#header_content>#menu>form>.menulink
+{
+	
+}
+#header_content>#menu>form>.menulink:hover
+{
+	
+}
+#altlogo{
+    width: 105px;
+    height: 25px;
+	float:right;
+	margin-top:-30px;
+	margin-right:-15px;
+	background-image: url(../images/eksiseyler.png);
+	background-repeat: no-repeat;
+}
+#content
+{
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content_left{
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    float:left;
+    margin-top: 130px;
+	overflow-y:scroll;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#content_left>#katagoriadi
+{
+	color: #888;
+	font-weight: normal;
+	font-size: 20px;
+}
+#trendler>ul
+{
+	margin-left:0;
+}
+#trendler>ul>a
+{
+	text-decoration:none;
+	color:black;
+}
+#trendler>ul>a>li
+{
+	word-wrap: break-word;
+	margin-left:-40px;
+	padding-left:0;
+	padding-top:25px;
+	padding-bottom:25px;
+	margin-top:5px;
+}
+#trendler>ul>a>li:hover
+{
+	background-color:red;
+}
+#trendler>ul>a>li>#trendbaslik
+{
+	float:left;
+	width:190px;
+	margin-top:-15px;
+}
+#trendler>ul>a>li>#trendbegeni
+{
+	float:right;
+	height:auto;
+	width:20px;
+	margin-top:-15px;
+}
+::-webkit-scrollbar
+{
+  width: 7px;  
+  height: 6px; 
+  margin-top:15px;
+}
+::-webkit-scrollbar-track/*scroll arkaplanı*/
+{
+  
+/*
+margin-top:10px;
+margin-bottom:0px;
+*/
+}
+::-webkit-scrollbar-thumb
+{
+  background: #F2F2F2;
+  box-shadow: 0 0 5px 0 #000000;
+  border-radius:30px;
+}
+#content_right{
+    width: 920px;
+    height: auto;
+    float:right;
+    margin-top: 140px;
+    padding-left: 20px;
+}
+#content_right>ul>li>#baslik
+{
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:25px;
+}
+#content_right>ul>li>#baslik:hover
+{
+	text-decoration:underline;
+}
+#content_right>ul>li
+{
+	height:auto;
+	width:600px;
+	margin-top:15px;
+}
+#content_right>ul>li>#entryfooter
+{
+	height:30px;
+	width:auto;
+}
+#facebook
+{
+	float:left;
+	width:20px;
+	height:20px;
+	margin-left:10px;
+	background-image: url(../images/facebook1.png);
+	background-repeat: no-repeat;
+
+}
+#facebook:hover
+{
+	background-image: url(../images/facebook2.png);
+}
+#twitter
+{
+	float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/twitter1.png);
+	background-repeat: no-repeat;
+	margin-top:1px;
+}
+#twitter:hover
+{
+	background-image: url(../images/twitter2.png);
+}
+#likepasif
+{
+	float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/like1.png);
+	background-repeat: no-repeat;
+	margin-left:20px;
+	margin-top:2px;
+}
+#likeaktif
+{
+    float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/like2.png);
+	background-repeat: no-repeat;
+	margin-left:20px;
+	margin-top:2px;
+}
+#likepasif:hover
+{
+	background-image: url(../images/like2.png);
+}
+#dislikepasif
+{
+	float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/dislike1.png);
+	background-repeat: no-repeat;
+	margin-left:5px;
+	margin-top:2px;
+}
+#dislikeaktif
+{
+    float:left;
+	width:20px;
+	height:20px;
+	background-image: url(../images/dislike2.png);
+	background-repeat: no-repeat;
+	margin-left:5px;
+	margin-top:2px;
+}
+#dislikepasif:hover
+{
+	background-image: url(../images/dislike2.png);
+}
+#tarih
+{
+	margin-top:-3px;
+	float:right;
+	color:black;
+}
+#tarih:hover
+{
+	text-decoration:underline;
+}
+#yazar
+{
+	margin-top:-3px;
+	float:right;
+	margin-left:15px;
+	color:green;
+}
+#yazar:hover
+{
+	text-decoration:underline;
+}
+#sikayet
+{
+	margin-top:-3px;
+	float:right;
+	margin-left:15px;
+	color:green;
+}
+#footer
+{
+    width: auto;
+    height: 50px;
+    border-top: 2px solid black;
+	padding-top:10px;
+}
+#footer>a
+{
+	color:black;
+	text-decoration:none;
+	margin-right:40px;
+	width:auto;
+	margin-top:-15px;
+	
+	height:15px;
+}
+#footer>a:hover
+{
+	text-decoration:underline;
+}
+#girisdiv
+{
+	width:350px;
+	margin-top:-25px;
+}
+#girisdiv>input[type="text"]
+{
+	width:340px;
+	height:35px;
+	outline:none;
+	font-size:15px;
+}
+#girisdiv>input[type="password"]
+{
+	width:340px;
+	height:35px;
+	outline:none;
+	outline:none;
+	font-size:15px;
+}
+#girisdiv>input[type="submit"]
+{
+	width:340px;
+	height:35px;
+	color:#fff;
+	background-color:#80C14B;
+	border:1px solid #80C14B;
+	border-radius:3px 3px;
+	font-size:15px;
+}
+#girisdiv>input[type="submit"]:hover
+{
+	background-color:#67A138;
+}
+#girisdiv>a
+{
+	color:black;
+	text-decoration:none;
+}
+#girisdiv>a:hover
+{
+	text-decoration:underline;
+}
+#kayitdiv
+{
+	width:350px;
+}
+#kayitdiv>input[type="text"]
+{
+	width:340px;
+	height:35px;
+	outline:none;
+	font-size:15px;
+}
+#kayitdiv>input[type="password"]
+{
+	width:340px;
+	height:35px;
+	outline:none;
+	outline:none;
+	font-size:15px;
+}
+#kayitdiv>input[type="submit"]
+{
+	width:340px;
+	height:35px;
+	color:#fff;
+	background-color:#80C14B;
+	border:1px solid #80C14B;
+	border-radius:3px 3px;
+	font-size:15px;
+}
+#kayitdiv>input[type="submit"]:hover
+{
+	background-color:#67A138;
+}
+#kayitdiv>a
+{
+	color:black;
+	text-decoration:none;
+}
+#kayitdiv>a:hover
+{
+	text-decoration:underline;
+}
+
+.Yorumdiv
+{
+    height:260px;
+    width:610px;
+    margin-left: 40;
+}
+.Yorumdiv>form>textarea
+{
+      color: red;
+     max-width:610px;
+    max-height:200px;
+}
+.Yorumdiv>form>input[type="submit"]
+{
+	width:100%;
+	height:35px;
+	color:#fff;
+	background-color:#80C14B;
+	border:1px solid #80C14B;
+	border-radius:3px 3px;
+	font-size:15px;
+}
+
+
+
+
+
+.mesajkutusu
+{
+float: left;
+background-color: gray;
+color: black;
+height:250px;
+width: 150px;
+overflow-y: scroll;
+}
+
+.mesajkutusu > ul
+{
+    margin-top: 0;
+    width: 50px;
+    margin-left: 0;
+}
+.mesajkutusu > ul > form > li > input[type="submit"]
+{
+    cursor:pointer;
+    background: darkgray;
+    outline: none;
+    border: 0;
+    width: 138px;
+    margin-left: -35px;
+    margin-bottom: 5px;
+}
+.mesajkutusu > ul > form > li > input[id="okunmus"]
+{
+    background: darkgray;
+}
+.mesajkutusu > ul > form > li > input[id="okunmamis"]
+{
+    background: red;
+}
+.mesaj
+{
+float: right;
+background-color: blue;
+color: red;
+height:250px;
+width: 750px;
+}
+#mesajlar
+{
+    background-color: aqua;
+    height: 200px;
+    width: 750px;
+}
+#gonderdiv
+{
+    color:red;
+    background-color: black;
+    height: 50px;
+    width: 750px;
+}
+#gonderdiv>form>input[type="submit"]
+{
+    float: right;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    padding-top: -25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#gonderdiv>form>textarea
+{
+     max-width: 650px;
+     max-height: 50px;
+}
+#alici
+{
+    color: blue;
+    background-color: red;
+    height: 20px;
+}
+#aliciilemesajlasma
+{
+overflow-y: scroll;
+background-color: #ccaaaa;
+height:180px;
+}
+li#gonderenstil
+{
+    text-align: right;
+    color: aqua;
+}
+#alicistil
+{
+    text-align: left;
+    color: #3f5252;
+}
+
+
+#stilcss
+{
+    background-color: red;
+}
+
+#tarihb
+{   
+    background-color: gray;
+    width: auto;
+    height: 25px;
+    font-weight: bold;
+    outline: none;
+    border:0;
+}
+#sayfalama
+{
+    background-color: red;
+    color: blue;
+    float: right;
+    width: auto;
+}
+.sayfalamab
+{
+    background-color: white;
+    outline: none;
+    border: 0;
+}
+.badidurumdiv
+{
+    margin-top: -35px;
+    width: 150px;
+    height: 30px;
+    color:red;
+}
+.rütbe
+{
+   background-color: yellowgreen;
+   height: 25px;
+   width: 55px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   margin-top: 5px;
+}
+.cizgi
+{
+    height:5px;
+    width: 100%;
+    background: blue;
+    margin-top: 20px;
+}
+.linkler
+{
+    color: blue;
+}
+.link>input[type="submit"]
+{
+    float: left;
+    margin-bottom: 9px;
+    margin-right: 15px;
+    height: 20px;
+    border: 0;
+    cursor:hand;
+    outline: none;
+}
+.profileaitentryler
+{
+   
+}
+.profileaitentryler>ul
+{
+   
+     padding-left: 0px;
+}
+.profileaitentryler>ul>li>div>a
+{
+    color: black;
+    text-decoration: none;
+}
+.profileaitentryler>ul>li>div>a:hover
+{
+     text-decoration: underline;
+}
+.deneme
+{
+    background-color: red;
+}
+.clear
+{
+	clear:both;
+}
