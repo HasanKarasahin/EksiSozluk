@@ -2,9 +2,6 @@
 include("ayarlar.php");
 session_start();
 
-//$url = $_SERVER['HTTP_REFERER'];  // hangi sayfadan gelindigi degerini verir.
-
-
 if (isset($_SESSION['oturum'])) {
     if (isset($_GET['ys'])) {
         //burda yorum silinecek
@@ -49,7 +46,7 @@ if (isset($_SESSION['oturum'])) {
     }
 
 } else {
-    echo "Yaliş Yerdesin";
+    echo "Yanlış Yerdesin";
 }
 
 ?>

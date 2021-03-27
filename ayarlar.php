@@ -68,6 +68,11 @@ function sqlUpdateUyeBanKaldir($baglan, $kb)
     return $sorgu;
 }
 
+function sqlKullaniciVarMi($baglan,$email,$pass){
+    $sorgu = mysqli_query($baglan, "SELECT * FROM uyelertbl WHERE email='$email' AND sifre='$pass'");
+    return $sorgu;
+}
+
 
 ?>
 

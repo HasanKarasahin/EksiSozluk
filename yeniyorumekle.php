@@ -15,15 +15,6 @@ if (isset($_GET["b"]) && (@$_SESSION['oturum'] == "acik")) {
 }
 
 if (@$_POST['yeniyorumgeldi']) {
-    /*
-    //$yeniyorumsql=mysqli_query($baglan,"Insert Yorum");
-    echo date('d');//İki haneli şeklinde günü verir
-    echo date('m');//İki haneli şeklinde ayı verir
-    echo date('Y');//Dört haneli şeklinde yılı verir
-    echo date('H');//İki haneli ve 24 saat formatında saati verir
-    echo date('i');//İki haneli şeklinde dakikayı verir
-    echo date('s');//İki haneli şeklinde saniyeyi verir
-    */
 
     $_POST['yeniyorum'] = trim($_POST['yeniyorum']);
     if (empty($_POST['yeniyorum'])) {

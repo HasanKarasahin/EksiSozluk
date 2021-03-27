@@ -76,6 +76,7 @@ if (isset($_POST["kayitbuton"])) {
         phpAlert("Boyle Biri Var,Baska Bir kullanici ismi bul");
     } else {
         $emailara = mysqli_query($baglan, "SELECT email FROM uyelertbl WHERE email='$email'");
+
         if (mysqli_fetch_row($emailara) > 0) {
             phpAlert("Boyle Bir Mail Adresi Kullaniliyor");
         } else {

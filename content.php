@@ -2,7 +2,6 @@
     <div id="content_left">
         <div id="katagoriadi">
             <?php
-            //$_SESSION['ustmenu']="gündem";
             if (@$_POST['m']) {
                 $_SESSION['ustmenu'] = $_POST['m'];
             } else if (empty($_SESSION['ustmenu'])) {
@@ -316,11 +315,6 @@
                         $baslik_sayisi++;
                     }
 
-
-                    //   echo var_dump($baslik_dizisi);
-                    //    echo "Baslik Sayisi".$baslik_sayisi;
-
-
                     $kontrol = 0;
                     if (@$_SESSION['rutbe'] == "admin") {
                         $kontrol = 1;
@@ -331,7 +325,6 @@
                     while ($baslik = mysqli_fetch_assoc($basliklarigetirsql)) {
 
                         $rastgele_indis_baslik = rand(0, $baslik_sayisi - 1);
-                        //  echo "Rast Baslik".$baslik_dizisi[$rastgele_indis];
                         $indisegorebliksql = mysqli_query($baglan, "SELECT BaslikAdi FROM basliklartbl WHERE BaslikId='{$baslik_dizisi[$rastgele_indis_baslik]}'");
                         $indisegorebaslik = mysqli_fetch_assoc($indisegorebliksql);
                         ?>
@@ -364,9 +357,6 @@
                                 } else {
                                     $rastgele_indis = 0;
                                 }
-                                //echo $satir_sayisi;
-                                //echo $dizi[$rastgele_indis];
-
 
                                 if (!$dizi[$rastgele_indis]) {
                                     $dizi[$rastgele_indis] = 0;
@@ -441,7 +431,7 @@
             ?>
             </ul>
 
-            <?php //&& $_SESSION['oturum']=="acik")
+            <?php
             include("yeniyorumekle.php");
         }
         ?>

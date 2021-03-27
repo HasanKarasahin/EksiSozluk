@@ -2,7 +2,7 @@
 if (isset($_POST["girisbuton"])) {
     $nick = $_POST["nick"];
     $pass = $_POST["pass"];
-    $kullanicivarmi = mysqli_query($baglan, "SELECT * FROM uyelertbl WHERE email='$nick' AND sifre='$pass'");
+    $kullanicivarmi = sqlKullaniciVarMi($baglan,$nick,$pass);
     if ($kullanici = mysqli_fetch_assoc($kullanicivarmi)) {
         $_SESSION['oturum'] = "acik";
         $_SESSION['yazarid'] = $kullanici['id'];
